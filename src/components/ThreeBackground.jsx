@@ -20,6 +20,12 @@ export default function ThreeBackground() {
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: "high-performance" });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.domElement.style.position = 'absolute';
+    renderer.domElement.style.top = '0';
+    renderer.domElement.style.left = '0';
+    renderer.domElement.style.width = '100%';
+    renderer.domElement.style.height = '100%';
+    renderer.domElement.style.pointerEvents = 'none';
     containerRef.current.appendChild(renderer.domElement);
 
     // 1. Kinetic Icosahedron Wireframe Mesh
@@ -146,7 +152,18 @@ export default function ThreeBackground() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-80"
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+        pointerEvents: 'none',
+        zIndex: 0,
+        overflow: 'hidden',
+        opacity: 0.75
+      }}
+      className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
     />
   );
 }
