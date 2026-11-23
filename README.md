@@ -139,3 +139,7 @@ This implementation was validated via:
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+Part of [my always-on agent stack](https://github.com/Amz34) · [Awesome Agent Infrastructure](https://github.com/Amz34/awesome-agent-infrastructure) (135 live-checked building blocks).
