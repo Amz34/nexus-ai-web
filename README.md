@@ -13,6 +13,12 @@ A production-grade, design-first web application that bridges high-fidelity Figm
 
 ---
 
+## 🏛 System Topology
+
+![NEXUS-AI Architecture](assets/architecture-overview.svg)
+
+---
+
 ## The Problem With Generic Vibe-Coded UI
 
 Most AI-generated frontends fall into identical traps:
